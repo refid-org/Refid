@@ -1,0 +1,33 @@
+{
+  "name": "refid",
+  "description": "Boost referrals with AI, reward with tokens, and celebrate with recommendation NFTs. Elevate your referral hiring today.",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --parallel",
+    "dev": "turbo run dev --parallel",
+    "start": "turbo run start --parallel",
+    "lint": "turbo run lint --parallel --ignore .gitignore",
+    "lint:fix": "turbo run lint --parallel --ignore .gitignore -- --fix"
+  },
+  "lint-staged": {
+    "*.{css,scss}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "turbo": "^1.10.13"
+  }
+}
