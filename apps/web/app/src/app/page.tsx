@@ -8,21 +8,19 @@ export default function Home() {
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
           <div>
             <span className="bg-black text-white p-2 rounded">Beta</span>
-            <h2 className="text-2xl font-bold mt-4">
+            <h1 className="text-3xl font-bold mt-4">
               Unlock the Power of Web3 Referrals with AI & Tokens
-            </h2>
+            </h1>
             <p className="mt-4">
               Boost referrals with AI, reward with tokens, and celebrate with
               recommendation NFTs. Elevate your referral hiring today.
             </p>
             <div className="mt-4">
-              <button
-                className={
-                  "px-6 py-3 rounded-full text-white bg-green-700 hover:bg-green-900 ."
-                }
-              >
-                Join Waitlist
-              </button>
+              <a href="#waitlistSection">
+                <button className="px-6 py-3 rounded-full text-white bg-green-700 hover:bg-green-900">
+                  Join Waitlist
+                </button>
+              </a>
             </div>
           </div>
           <div className="relative min-h-[300px]">
@@ -91,20 +89,53 @@ export default function Home() {
             />
           </div>
         </div>
-
         <div className="text-center">
-          <p className="text-2xl">
-            Be a pioneer in reshaping the future of referral hiring.
-          </p>
+          <h1 className="text-3xl font-bold mt-4">Demo of Referral Request</h1>
         </div>
-        <div className="text-center">
-          <button
-            className={
-              "px-6 py-3 rounded-full text-white bg-green-700 hover:bg-green-900 ."
-            }
-          >
-            Join Waitlist
-          </button>
+        <div
+          style={{
+            position: "relative",
+            paddingBottom: "calc(48.854166666666664% + 41px)",
+            height: "0",
+            width: "100%",
+          }}
+        >
+          <iframe
+            src="https://demo.arcade.software/YgzwYiSZSPKZinHQV30K?embed"
+            frameBorder="0"
+            loading="lazy"
+            allowFullScreen
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              colorScheme: "light",
+            }}
+            title="Refid β Demo"
+          ></iframe>
+        </div>
+        <div
+          id="waitlistSection"
+          style={{
+            width: "100%",
+          }}
+        >
+          <div className="text-center">
+            <h1 className="text-3xl font-bold mt-4">Join Waitlist</h1>
+            <p className="my-4">
+              Be a pioneer in reshaping the future of referral hiring.
+            </p>
+          </div>
+          <iframe
+            className="airtable-embed"
+            src="https://airtable.com/embed/appdLxjtpRsDMtX9y/shr8Cd3CHKXg0fhvm?backgroundColor=blue"
+            frameBorder="0"
+            width="100%"
+            height="533"
+            style={{ background: "transparent", border: "1px solid #ccc" }}
+          ></iframe>
         </div>
       </main>
       <Footer />

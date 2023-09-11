@@ -7,14 +7,14 @@ export default function Footer() {
         <p className="font-bold text-xl">Refid</p>
         <div className="space-y-4">
           <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-5">
-            <a
+            {/* <a
               href="https://docs.refid.xyz/"
               target="_blank"
               rel="noopener noreferrer"
               className="mr-5"
             >
               Resource Docs
-            </a>
+            </a> */}
             <a
               href="https://amplified-abrosaurus-249.notion.site/Privacy-Policy-bc869e77c8f448bb98e921c9b430a9db"
               target="_blank"
@@ -23,7 +23,7 @@ export default function Footer() {
             >
               Privacy Policy
             </a>
-            <a
+            {/* <a
               href="https://www.notion.so/Cookie-Policy-f6f3810d3a5b4612920ec493387f9e7c"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function Footer() {
               className="mr-5"
             >
               User Terms
-            </a>
+            </a> */}
           </div>
           <div className="flex space-x-5">
             <a
