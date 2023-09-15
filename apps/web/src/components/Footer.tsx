@@ -1,4 +1,4 @@
-import { FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaTwitter, FaTelegram, FaDatabase } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -45,17 +45,30 @@ export default function Footer() {
               href="https://twitter.com/Refidentity"
               target="_blank"
               rel="noopener noreferrer"
-              className="mr-5"
             >
               <FaTwitter />
             </a>
             <a
+              href="https://t.me/+K6hVHd3cZOk4YmI1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegram />
+            </a>
+            <a
+              href="https://airtable.com/appvlgbqQu5bkjlXZ/shrBow66J01slDZPk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaDatabase />
+            </a>
+            {/* <a
               href="https://discord.gg/ZpmSdDhYA3"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaDiscord />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
